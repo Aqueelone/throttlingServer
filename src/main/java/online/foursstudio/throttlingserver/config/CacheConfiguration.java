@@ -40,6 +40,8 @@ public class CacheConfiguration {
             cm.createCache(online.foursstudio.throttlingserver.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(online.foursstudio.throttlingserver.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(online.foursstudio.throttlingserver.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(online.foursstudio.throttlingserver.domain.Ticket.class.getName(), jcacheConfiguration);
+            cm.createCache(online.foursstudio.throttlingserver.domain.SLA.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }

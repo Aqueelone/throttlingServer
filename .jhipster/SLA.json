@@ -1,0 +1,30 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [
+        {
+            "relationshipName": "user",
+            "otherEntityName": "user",
+            "relationshipType": "one-to-one",
+            "relationshipValidateRules": [
+                "required"
+            ],
+            "otherEntityField": "login",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "sLA"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "rps",
+            "fieldType": "Integer",
+            "fieldValidateRules": []
+        }
+    ],
+    "changelogDate": "20180422142620",
+    "dto": "mapstruct",
+    "service": "serviceImpl",
+    "entityTableName": "sla",
+    "jpaMetamodelFiltering": true,
+    "pagination": "no"
+}

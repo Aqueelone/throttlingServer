@@ -10,6 +10,8 @@ import activate from 'app/modules/account/activate/activate.reducer';
 import password from 'app/modules/account/password/password.reducer';
 import settings from 'app/modules/account/settings/settings.reducer';
 import passwordReset from 'app/modules/account/password-reset/password-reset.reducer';
+import ticket from 'app/entities/ticket/ticket.reducer';
+import sLA from 'app/entities/sla/sla.reducer';
 /* jhipster-needle-add-reducer-import - JHipster will add reducer here */
 
 export default combineReducers({
@@ -21,6 +23,8 @@ export default combineReducers({
   passwordReset,
   password,
   settings,
+  ticket,
+  sLA,
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
   loadingBar
 });
