@@ -1,5 +1,6 @@
 entity Ticket {
-	description String
+	description String,
+    status TicketStatus
 }
 enum TicketStatus {
 	PENDING, REJECTED, OPEN, SOLVED, CANCELED
