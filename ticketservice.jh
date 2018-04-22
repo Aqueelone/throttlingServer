@@ -5,7 +5,7 @@ enum TicketStatus {
 	PENDING, REJECTED, OPEN, SOLVED, CANCELED
 }
 entity SLA {
-	rts Int
+	rts Integer
 }
 relationship OneToOne {
 	Ticket{status} to TicketStatus,
