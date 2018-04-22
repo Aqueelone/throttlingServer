@@ -1,0 +1,24 @@
+entity Ticket {
+	description String
+}
+enum TicketStatus {
+	PENDING, REJECTED, OPEN, SOLVED, CANCELED
+}
+entity SLA {
+	rts Int
+}
+relationship OneToOne {
+	Ticket{status} to TicketStatus,
+    SLA{user} to User
+}
+relationship OneToMany {
+	Ticket{user} to User
+}
+
+// Set pagination options
+paginate * with infinite-scroll
+
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
