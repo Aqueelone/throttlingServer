@@ -9,7 +9,6 @@ entity SLA {
 	rts Integer
 }
 relationship OneToOne {
-	Ticket{status} to TicketStatus,
     SLA{user} to User
 }
 relationship OneToMany {
